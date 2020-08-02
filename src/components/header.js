@@ -61,7 +61,7 @@ const Header = () => {
               </svg>
             </div>
 
-            <Link className="pl-2 inline-block no-underline font-bold text-gray-600 hover:text-black" to="/lista">
+            <Link className="pl-2 inline-block no-underline font-bold text-gray-600 hover:text-black" to="/carrito">
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24">
                 <path

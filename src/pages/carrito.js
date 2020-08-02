@@ -16,7 +16,7 @@ const ShoppingList = () => {
     <Layout>
       <SEO title="Carrito de Compra" />
       <div className="bg-gray-100 flex flex-wrap mx-auto w-full justify-around">
-        <ul className="flex flex-col p-4 md:m-4">
+        <ul className="flex flex-col p-4 md:m-2">
           {
             cartItems.length
               ? cartItems.map(item => <CartItem key={item.strapiId} {...item} />)
@@ -24,13 +24,13 @@ const ShoppingList = () => {
           }
         </ul>
 
-        <div className="p-5 md:m-4 lg:flex">
+        <div className="p-5 md:m-2 lg:flex">
           <div className="">
             <div className="p-3 bg-gray-300 rounded-full">
               <h1 className="ml-2 font-bold">Detalles del pedido</h1>
             </div>
             <div className="p-4">
-              <p className="mb-6 italic">Shipping and additionnal costs are calculated based on values you have entered</p>
+              <p className="mb-6 italic">El envío y costos adicionales son calculados según los datos que has proporcionado.</p>
               <div className="flex justify-between border-b">
                 <div className="lg:px-4 lg:py-2 m-2 font-bold text-center">
                   Envío

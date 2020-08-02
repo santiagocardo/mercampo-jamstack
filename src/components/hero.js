@@ -1,8 +1,25 @@
 import React from 'react'
+import Image from 'gatsby-image'
 
-import HeroImg from '../images/hero.jpeg'
+import { useStaticQuery } from 'gatsby'
+
+const query = graphql`
+  {
+    file(relativePath: { eq: "hero.jpeg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
 
 const Hero = () => {
+  const {
+    file: { childImageSharp: { fluid } }
+  } = useStaticQuery(query)
+
   return (
     <div className="relative bg-white overflow-hidden">
       <div className="max-w-screen-xl mx-auto">
@@ -41,7 +58,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img loading="lazy" className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src={HeroImg} alt="Groceries" />
+        <Image
+          fluid={fluid}
+          loading="lazy"
+          alt="frutas y verduras"
+          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+        />
       </div>
     </div>
   )
