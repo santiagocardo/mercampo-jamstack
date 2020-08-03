@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
 import Card from '../Card'

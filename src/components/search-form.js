@@ -19,7 +19,7 @@ const SearchForm = () => {
             <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </button>
-        <input onChange={handleChange} id="searchfield" type="search" placeholder="Busca tu producto..." autoFocus="autofocus" className="w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl" />
+        <input onChange={handleChange} id="searchfield" type="search" placeholder="Busca tu producto..." className="w-full text-grey-800 transition focus:outline-none focus:border-transparent p-2 appearance-none leading-normal text-xl lg:text-2xl" />
       </div>
     </form>
   )

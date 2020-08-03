@@ -13,8 +13,7 @@ const CartItem = product => {
     photo,
     quantity,
     default_quantity,
-    quantity_type,
-    product_type
+    quantity_type
   } = product
   const { changeProductQuantity, removeProduct } = useCart()
 
