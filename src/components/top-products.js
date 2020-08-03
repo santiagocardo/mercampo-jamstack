@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import Card from '../card'
+import Card from './card'
 
 const query = graphql`
 {
