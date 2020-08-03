@@ -53,7 +53,7 @@ const Card = product => {
             </button>
             <input
               type="number"
-              className="focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700 outline-none"
+              className="focus:outline-none rounded-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700 outline-none"
               name="custom-input-number"
               onChange={() => ""}
               value={quantity}
