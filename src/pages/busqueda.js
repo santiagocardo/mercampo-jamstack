@@ -41,13 +41,13 @@ const Busqueda = () => {
 
   return (
     <Layout>
-      <SEO title={keyword} />
+      <SEO title={keyword || 'Búsqueda sin resultados'} />
       <main className="px-8 lg:px-16 py-6 bg-gray-100">
         <Banner title={`Resultados de búsqueda para ${keyword}...`} />
         <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {
             products
-              .filter(product => product.name.toLowerCase().includes(keyword.toLowerCase()))
+              .filter(product => keyword && product.name.toLowerCase().includes(keyword.toLowerCase()))
               .map(product => <Card key={product.strapiId} {...product} />)
           }
         </div>
