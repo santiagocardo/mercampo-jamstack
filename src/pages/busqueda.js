@@ -4,7 +4,7 @@ import { useQueryParam, StringParam } from 'use-query-params'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from '../components/Card'
+import Card from '../components/card'
 import Banner from '../components/banner'
 
 const query = graphql`

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Card from './Card'
+import Card from './card'
 
 const Products = ({ products, numPages, currentPage, category }) => (
   <>
