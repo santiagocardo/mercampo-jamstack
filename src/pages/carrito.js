@@ -9,7 +9,7 @@ const sum = (acc, curr) => acc + curr.total
 
 const ShoppingList = () => {
   const { cart } = useCart()
-  const cartItems = Object.values(cart) || []
+  const cartItems = cart ? Object.values(cart) : []
   const total = cartItems.reduce(sum, 0)
 
   return (
