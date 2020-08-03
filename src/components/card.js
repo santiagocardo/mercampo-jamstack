@@ -43,10 +43,10 @@ const Card = product => {
       </Link>
       <div className="flex flex-wrap justify-evenly m-3">
         <div className="custom-number-input h-10 w-32 mt-2">
-          <div className="flex flex-row h-10 w-full rounded-lg relative bg-transparent">
+          <div className="flex flex-row h-10 w-full relative bg-transparent">
             <button
               data-action="decrement"
-              className=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 transition ease-out duration-300 h-full w-20 rounded-l cursor-pointer"
+              className=" bg-gray-300 rounded-l-lg text-gray-600 hover:text-gray-700 hover:bg-gray-400 transition ease-out duration-300 h-full w-20 cursor-pointer"
               onClick={handleDecrease}
             >
               <span className="m-auto text-2xl font-thin">−</span>
@@ -60,7 +60,7 @@ const Card = product => {
             />
             <button
               data-action="increment"
-              className="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 transition ease-out duration-300 h-full w-20 rounded-r cursor-pointer"
+              className="bg-gray-300 rounded-r-lg text-gray-600 hover:text-gray-700 hover:bg-gray-400 transition ease-out duration-300 h-full w-20 cursor-pointer"
               onClick={handleIncrease}
             >
               <span className="m-auto text-2xl font-thin">+</span>
