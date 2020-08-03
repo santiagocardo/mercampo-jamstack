@@ -5,7 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-import './src/styles/index.css'
+import './styles.css'
 import React from "react"
 
 import { CartContextProvider } from "./src/context/cartContext"
