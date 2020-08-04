@@ -30,7 +30,7 @@ export const query = graphql`
   }
 `
 
-const AllProducts = ({
+const Frutas = ({
   data: { allStrapiProducts: { nodes: products } },
   pageContext: { numPages, currentPage }
 }) => {
@@ -50,4 +50,4 @@ const AllProducts = ({
   )
 }
 
-export default AllProducts
+export default Frutas
