@@ -8,22 +8,20 @@ import Products from '../components/products'
 export const query = graphql`
   query GetAllVerduras($skip: Int!, $limit: Int!) {
     allStrapiProducts(filter: {product_type: {eq: "verduras"}}, limit: $limit, skip: $skip) {
-      edges {
-        node {
-          name
-          default_quantity
-          strapiId
-          last_price
-          price
-          product_type
-          quantity_type {
-            quantity_type
-          }
-          photo {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+      nodes {
+        name
+        default_quantity
+        strapiId
+        last_price
+        price
+        product_type
+        quantity_type {
+          quantity_type
+        }
+        photo {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
             }
           }
         }
@@ -33,10 +31,9 @@ export const query = graphql`
 `
 
 const Verduras = ({
-  data: { allStrapiProducts: { edges } },
+  data: { allStrapiProducts: { nodes: products } },
   pageContext: { numPages, currentPage }
 }) => {
-  const products = edges.map(item => item.node)
   return (
     <Layout>
       <SEO title="Verduras" />

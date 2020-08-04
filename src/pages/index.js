@@ -9,7 +9,7 @@ import TopProducts from "../components/top-products"
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Inicio" />
       <Hero />
       <TopProducts />
       <AppMockup />
